@@ -1,7 +1,7 @@
 export interface BeersData {
-	price: number;
+	price: number | string;
 	name: string;
-	rating: { average: number; reviews: number };
+	rating: { average: number; reviews: number } | null | number;
 	image: string;
 	id: string;
 }

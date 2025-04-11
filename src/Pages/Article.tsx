@@ -1,9 +1,9 @@
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 
-function Article() {
-	const { id } = useParams();
+// function Article() {
+// 	const { id } = useParams();
 
-	return <h1> Article {id} </h1>;
-}
+// 	return <h1> Article {id} </h1>;
+// }
 
-export default Article;
+// export default Article;

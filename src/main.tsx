@@ -5,7 +5,7 @@ import App from "./App";
 
 import Accueil from "./Pages/Accueil";
 import Apropos from "./Pages/Apropos";
-import Beers from "./Pages/Article";
+// import Beers from "./Pages/Article";
 
 const fetchbeers = async () => {
 	try {
@@ -32,10 +32,10 @@ const router = createBrowserRouter([
 				path: "/Apropos",
 				element: <Apropos />,
 			},
-			{
-				path: "/Beers",
-				element: <Beers />,
-			},
+			// {
+			// 	path: "/Beers",
+			// 	element: <Beers />,
+			// },
 		],
 	},
 ]);
