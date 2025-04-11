@@ -1,5 +1,5 @@
 function Accueil() {
-	return <h1> Accueil </h1>;
+	return <h1> API BONJOUR! </h1>;
 }
 
 export default Accueil;
