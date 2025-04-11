@@ -7,8 +7,8 @@ function App() {
 			<nav>
 				<Link to="/">Accueil</Link>
 				<Link to="/Apropos">A propos</Link>
-				<Link to="/Article/1">Article 1</Link>
-				<Link to="/Article/2">Article 2</Link>
+				<Link to="/Beers/1">Beer 1</Link>
+				<Link to="/Beers/2">Beer 2</Link>
 			</nav>
 			<main>
 				<Outlet />
