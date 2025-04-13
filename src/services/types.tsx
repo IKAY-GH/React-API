@@ -3,7 +3,7 @@ export interface BeersData {
 	name: string;
 	rating: { average: number; reviews: number } | null | number;
 	image: string;
-	id: string;
+	id: number;
 }
 
 export interface BeersProps {

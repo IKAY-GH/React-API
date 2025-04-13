@@ -5,13 +5,18 @@ import App from "./App";
 
 import Accueil from "./Pages/Accueil";
 import Apropos from "./Pages/Apropos";
+import type { BeersData } from "./services/types";
+
 // import Beers from "./Pages/Article";
 
 const fetchbeers = async () => {
 	try {
 		const response = await fetch("https://api.sampleapis.com/beers/ale");
-		const json = await response.json();
-		return json;
+		const data: BeersData[] = await response.json();
+		const limitedBeers = data.filter(
+			(beers) => beers.id >= 1 && beers.id <= 180,
+		);
+		return limitedBeers;
 	} catch (error) {
 		console.error(error);
 	}

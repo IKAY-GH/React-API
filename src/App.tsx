@@ -5,10 +5,9 @@ function App() {
 	return (
 		<>
 			<body>
-				<img src="./Image/8237.jpg" alt="Fond d'écran bar" />
 				<header>
 					<h1>Wild Beers</h1>
-					Bienvenue sur notre page de séclection de bière pensées pour les
+					Bienvenue sur notre page de sélection de bières pensées pour les
 					wilders
 				</header>
 				<nav>

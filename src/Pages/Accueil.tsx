@@ -8,7 +8,12 @@ function Accueil() {
 	useEffect(() => {
 		fetch("https://api.sampleapis.com/beers/ale")
 			.then((response) => response.json())
-			.then((json) => setData(json))
+			.then((json) => {
+				const filteredData = json.filter(
+					(beer: BeersData) => Number(beer.id) >= 1 && Number(beer.id) <= 180,
+				);
+				setData(filteredData);
+			})
 			.catch((error) => console.error(error));
 	}, []);
 
