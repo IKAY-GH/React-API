@@ -7,14 +7,14 @@ function App() {
 			<body>
 				<header>
 					<h1>Wild Beers</h1>
-					Bienvenue sur notre page de sélection de bières pensées pour les
-					wilders
+					<p>
+						Bienvenue sur notre page de sélection de bières pensées pour les
+						wilders
+					</p>
 				</header>
 				<nav>
 					<Link to="/">Accueil</Link>
 					<Link to="/Apropos">A propos</Link>
-					{/* <Link to="/Beers/1">Beer 1</Link>
-					<Link to="/Beers/2">Beer 2</Link> */}
 				</nav>
 				<main>
 					<Outlet />

@@ -7,10 +7,7 @@ function Beer({ beers }: BeersProps) {
 
 	return (
 		<>
-			<h1>{name}</h1>
-			{/* <p>
-				{rating.average}, {rating.reviews}
-			</p>*/}
+			<h2>{name}</h2>
 			<p>Price: {price}$</p>
 			<img src={image} alt={name} />
 		</>

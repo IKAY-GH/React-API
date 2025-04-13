@@ -10,7 +10,7 @@ function Accueil() {
 			.then((response) => response.json())
 			.then((json) => {
 				const filteredData = json.filter(
-					(beer: BeersData) => Number(beer.id) >= 1 && Number(beer.id) <= 180,
+					(beer: BeersData) => Number(beer.id) >= 1 && Number(beer.id) <= 15,
 				);
 				setData(filteredData);
 			})
